@@ -56,7 +56,7 @@ export class ChatViewComponent {
    * @type {(ReceivedMessage[] | SentMessage[])}
    * @memberof ChatViewComponent
    */
-  @Input('messages') messages: ReceivedMessage[] | SentMessage[] = [];
+  @Input('messages') messages: (ReceivedMessage | SentMessage)[] = [];
 
 
   /**
@@ -117,7 +117,7 @@ export class ChatViewComponent {
 
   //messages array to keep track of previous messages.
   //This is used in ngDoCheck() top scroll chatview if new message is added.
-  private oldMessages = []
+  oldMessages = []
 
   constructor() {
   }
@@ -145,10 +145,9 @@ export class ChatViewComponent {
 
   /**
    * To scroll chatlist to the bottom
-   * @private
    * @memberof ChatViewComponent
    */
-  private scrollToBottom() {
+   scrollToBottom() {
     setTimeout(() => {
       this.chatlist.nativeElement.scrollTop = this.chatlist.nativeElement.scrollHeight
     }, 0)
