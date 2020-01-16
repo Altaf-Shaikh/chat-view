@@ -1,0 +1,21 @@
+div {
+  color: rgb(12, 12, 12);
+  text-align: left;
+}
+.sent-msg {
+  display: block;
+  width: 100%;
+  .sent-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20%;
+  }
+  message {
+    background-color:#BBDEFB;
+    // box-shadow: -1px 1px 2px 1px gray;
+    padding:5px;
+    border-radius: 10px;
+    margin-right: 10px;;
+    max-width: 90%;
+  }
+}

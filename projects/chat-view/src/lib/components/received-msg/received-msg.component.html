@@ -1,0 +1,9 @@
+<div class="recv-msg" >
+    <div *ngIf="message" class="recv-wrapper" >
+        <message [data]="message" (onOptionClicked)="optionClicked($event)" 
+        [style.backgroundColor]="receivedMessageOptions?.backgroundColor" 
+        [receivedMessageOptions]="receivedMessageOptions"
+        [quickRepliesOptions]="quickRepliesOptions"
+        ></message>
+    </div>
+</div>

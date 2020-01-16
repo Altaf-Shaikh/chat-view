@@ -1,0 +1,5 @@
+<div class="sent-msg">
+    <div *ngIf="message" class="sent-wrapper">
+        <message [data]="message" [style.backgroundColor]="sentMessageOptions?.backgroundColor" [sentMessageOptions]="sentMessageOptions"></message>
+    </div>
+</div>

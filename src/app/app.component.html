@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center; width:300px;height:650px;margin:auto;border:1px solid red;">
+  <chat-view [messages]="chatMessages"
+  (onOptionClicked)="optionClicked($event)"
+  (onInput)="inputSubmitted($event)"
+  ></chat-view>
+  <button (click)="receiveMessage()">Receive Message</button>
+  <button (click)="sendMessage()">Send Message</button>
+  <button (click)="chatMessages=[]">Clear</button>
+</div>
+
+

@@ -1,0 +1,9 @@
+<div class="input-wrapper" [style.backgroundColor]="options?.backgroundColor">
+    <input type="text" [(ngModel)]="inputText" placeholder="Say Something..." 
+    [attr.maxlength]="options?.maxLength"
+    [style.borderColor]="options?.borderColor"
+    [style.color]="options?.textColor"/>
+    <button class="btn-input-send"  (click)="send()">
+        <send-svg  [color]="options?.sendIconColor"></send-svg>
+    </button>
+</div>

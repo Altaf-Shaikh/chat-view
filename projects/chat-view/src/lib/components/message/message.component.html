@@ -1,0 +1,28 @@
+<div *ngIf="message">
+    <!--RECEIVED ITEM-->
+    <div class="message-wrapper" *ngIf="isRecivedMessage">
+
+        <div class="recv-text" *ngIf="text" [style.color]="receivedMessageOptions?.textColor">{{text}}</div>
+
+        <div *ngIf="image">
+            <img [src]="image" alt="">
+        </div>
+        <div class="quickreply-wrapper" *ngIf="quickReplies && quickReplies.length>0">
+            <div class="recv-quickreply" *ngFor="let reply of quickReplies"
+                [style.backgroundColor]="quickRepliesOptions?.backgroundColor"
+                [style.borderColor]="quickRepliesOptions?.borderColor">
+                <div (click)="optionClicked(reply)" 
+                [style.color]="quickRepliesOptions?.textColor">{{reply}}</div>
+            </div>
+        </div>
+    </div>
+
+    <!--SENT ITEM-->
+    <div class="message-wrapper" *ngIf="!isRecivedMessage">
+        <div class="sent-text" *ngIf="text" [style.color]="sentMessageOptions?.textColor">{{text}}</div>
+
+        <div *ngIf="image">
+            <img [src]="image" alt="">
+        </div>
+    </div>
+</div>

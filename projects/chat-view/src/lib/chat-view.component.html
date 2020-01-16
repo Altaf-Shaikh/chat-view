@@ -1,0 +1,28 @@
+<div class="chat-container">
+    <chat-header title="My Chat View" [headerOptions]="options.header"></chat-header>
+    <div #chatlist class="chat-list-wrapper"
+      [@messageAddedAnimation]="messages.length"
+      [style.backgroundColor]="options.chatlistBackgroundColor"
+      >
+        <div  class="chat-list-item" *ngFor="let message of messages;let i=index">
+
+            <!--received Message-->
+            <div *ngIf="message.getCategory()=='received'">
+                <received-message [message]="message"
+                (onOptionClicked)="optionClicked($event)" 
+                [receivedMessageOptions]="options.receivedMessage"
+                [quickRepliesOptions]="options.quickReplies"
+                ></received-message>
+            </div>
+
+            <!--Sent Message-->
+            <div *ngIf="message.getCategory()=='sent'">
+                <sent-message [message]="message"
+                [sentMessageOptions]="options.sentMessage"
+                ></sent-message>
+            </div>
+        </div>
+    </div>
+    <user-input (onInput)="sendMessage($event)"
+    [options]="options.inputBox"></user-input>
+</div>
