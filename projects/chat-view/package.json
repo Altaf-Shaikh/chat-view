@@ -1,9 +1,27 @@
 {
   "name": "chat-view",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "An angular component libray for chat widget.",
+  "author": "Altaf Shaikh",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Altaf-Shaikh/chat-view.git"
+  },
+  "keywords": [
+    "chat-view",
+    "chat view",
+    "angular chat",
+    "chat widget"
+  ],
+  "bugs": {
+    "url": "https://github.com/Altaf-Shaikh/chat-view/issues"
+  },
+  "homepage": "https://github.com/Altaf-Shaikh/chat-view#readme"
 }
