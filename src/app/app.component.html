@@ -3,6 +3,7 @@
   <chat-view [messages]="chatMessages"
   (onOptionClicked)="optionClicked($event)"
   (onInput)="inputSubmitted($event)"
+  [options]="options"
   ></chat-view>
   <button (click)="receiveMessage()">Receive Message</button>
   <button (click)="sendMessage()">Send Message</button>

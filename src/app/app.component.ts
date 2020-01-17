@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ReceivedMessage, SentMessage, Message } from 'chat-view'
+import { ReceivedMessage, SentMessage, Message, IChatViewOptions } from 'chat-view'
 
 
 @Component({
@@ -10,6 +10,43 @@ import { ReceivedMessage, SentMessage, Message } from 'chat-view'
 export class AppComponent {
 
   chatMessages: Message[] = []
+
+  options: IChatViewOptions = {
+    //Set background color and text color of SentMessage
+    sentMessage: {  
+      textColor: 'white',
+      backgroundColor: '#b580d1',
+    },
+
+    //Set background color and text color of ReceivedMessage
+    receivedMessage: {
+      textColor: 'black',
+      backgroundColor: '#b7c5eb',
+    },
+
+     //Set background color and text color of ChatHeader
+    header: {
+      textColor: 'white',
+      backgroundColor: '#7d8496'
+    },
+     //Set border color, text color, max input length, send icon color and background color of input box
+    inputBox: {
+      borderColor: '#b580d1',
+      textColor: 'black',
+      maxLength: 50,
+      sendIconColor: '#b580d1',
+      backgroundColor: '#dadde6'
+    },
+    //Set text color, background color and border color of quick replies
+    quickReplies: {
+      textColor: 'white',
+      backgroundColor: '#b580d1',
+      borderColor: '#b580d1'
+    },
+
+    //Set background color of chatlist pane
+    chatlistBackgroundColor: '#e9edf5',
+  }
 
   ngOnInit() {
     //Add a received message with text and image
