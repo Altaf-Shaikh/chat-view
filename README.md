@@ -4,8 +4,8 @@ An angular component libray for chat widget with customizable styling.
 # Usage & Demo
 Please refer [Repo](https://github.com/Altaf-Shaikh/chat-view/tree/master/src/app) for usage.
 
-![Sample 1](/repo-assets/Sample 1.png)
-![Sample 2](/repo-assets/Sample 2.png)
+![Sample 1](https://github.com/Altaf-Shaikh/chat-view/blob/master/repo-assets/Sample%201.png)
+![Sample 2](https://github.com/Altaf-Shaikh/chat-view/blob/master/repo-assets/Sample%202.png)
 - - -
 
 ### Installation
