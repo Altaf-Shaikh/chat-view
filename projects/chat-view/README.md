@@ -1,5 +1,5 @@
 # chat-view
-An angular component libray for chat widget.
+An angular component library for chat widget.
 
 # Usage & Demo
 Please refer [Repo](https://github.com/Altaf-Shaikh/chat-view/tree/master/src/app) for usage.

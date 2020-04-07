@@ -1,6 +1,6 @@
 {
   "name": "chat-view",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An angular component library for chat widget.",
   "author": "Altaf Shaikh",
   "license": "MIT",
