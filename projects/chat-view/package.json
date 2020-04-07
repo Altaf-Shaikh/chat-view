@@ -1,7 +1,7 @@
 {
   "name": "chat-view",
-  "version": "1.0.1",
-  "description": "An angular component libray for chat widget.",
+  "version": "1.0.4",
+  "description": "An angular component library for chat widget.",
   "author": "Altaf Shaikh",
   "license": "MIT",
   "peerDependencies": {
@@ -18,7 +18,13 @@
     "chat-view",
     "chat view",
     "angular chat",
-    "chat widget"
+    "chat widget",
+    "chat",
+    "messenger view",
+    "message widget",
+    "angular message view",
+    "ng-chat",
+    "ng chat"
   ],
   "bugs": {
     "url": "https://github.com/Altaf-Shaikh/chat-view/issues"

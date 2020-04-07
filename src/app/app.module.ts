@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ChatViewModule } from 'chat-view';
-// import { ChatViewModule } from 'projects/chat-view/src/lib/chat-view.module';
+
 
 @NgModule({
   declarations: [

@@ -14,12 +14,12 @@ import { ReceivedMessage, SentMessage } from './components/message-data/message-
       transition(':increment', [
         query(':enter', [
           style({ opacity: 0 }),
-          stagger(600, [
+          stagger(100, [
             useAnimation(messagePushAnimation, {
               params: {
                 opacity: 1,
                 translateY: 10,
-                time: '0.4s'
+                time: '0.2s'
               }
             })
           ]),
